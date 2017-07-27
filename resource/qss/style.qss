@@ -1,0 +1,634 @@
+
+
+QLabel {
+    color: #FFFFFF;
+    font-family: "微软雅黑";
+}
+
+QPushButton {
+    border:none;
+    color: #F0F0F0;
+    background: transparent;
+    outline: none;
+}
+
+/* titleBar */
+QWidget#titleBar {
+/*    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #00A4EC, stop:1 #017DDF);*/
+    background:transparent;
+}
+
+QLabel#lineLabel {
+    border-image: none;
+    background-image: none;
+    background: #F0F0F0;
+}
+
+QLabel#lineLabel2 {
+    background: #4CF0F0F0;
+}
+
+QPushButton#iconBtn {
+    min-height: 30px;
+    min-width: 30px;
+    image: url(://resource/image/title/kugou.png);
+}
+
+QPushButton#loginBtn {
+font-family: "微软雅黑";
+    font-weight: 60;
+    font-size: 13px;
+}
+
+QPushButton#registerBtn {
+font-family: "微软雅黑";
+    font-weight: 60;
+    font-size: 13px;
+}
+
+QPushButton#returnBtn {
+    min-height: 18px;
+    image: url(://resource/image/title/return.png);
+}
+
+QPushButton#returnBtn:!enabled {
+    image: url(://resource/image/title/return_unabled.png);
+}
+
+QPushButton#returnBtn:hover {
+    image: url(://resource/image/title/return_hover.png);
+}
+
+QPushButton#returnBtn:pressed {
+    image: url(://resource/image/title/return.png);
+}
+
+QPushButton#refreshBtn {
+    min-height: 22px;
+    image: url(://resource/image/title/refresh.png);
+}
+
+QPushButton#refreshBtn:hover {
+    image: url(://resource/image/title/refresh_hover.png);
+}
+
+QPushButton#refreshBtn:pressed {
+    image: url(://resource/image/title/refresh.png);
+}
+
+QPushButton#toolBtn {
+    min-height: 22px;
+    image: url(://resource/image/title/tool.png);
+}
+
+QPushButton#toolBtn:hover {
+    image: url(://resource/image/title/tool_hover.png);
+}
+
+QPushButton#toolBtn:pressed {
+    image: url(://resource/image/title/tool.png);
+}
+
+QPushButton#gameBtn {
+    min-height: 22px;
+    image: url(://resource/image/title/game.png);
+}
+
+QPushButton#gameBtn:hover {
+    image: url(://resource/image/title/game_hover.png);
+}
+
+QPushButton#gameBtn:pressed {
+    image: url(://resource/image/title/game.png);
+}
+
+QPushButton#newsBtn {
+    min-height: 22px;
+    image: url(://resource/image/title/news.png);
+}
+
+QPushButton#newsBtn:hover {
+    image: url(://resource/image/title/news_hover.png);
+}
+
+QPushButton#newsBtn:pressed {
+    image: url(://resource/image/title/news.png);
+}
+
+QPushButton#skinBtn {
+    min-height: 22px;
+    image: url(://resource/image/title/skin.png);
+}
+
+QPushButton#skinBtn:hover {
+    image: url(://resource/image/title/skin_hover.png);
+}
+
+QPushButton#skinBtn:pressed {
+    image: url(://resource/image/title/skin.png);
+}
+
+QPushButton#menuBtn {
+    min-height: 22px;
+    image: url(://resource/image/title/menu.png);
+}
+
+QPushButton#menuBtn:hover {
+    image: url(://resource/image/title/menu_hover.png);
+}
+
+QPushButton#menuBtn:pressed {
+    image: url(://resource/image/title/menu.png);
+}
+
+QPushButton#remoteBtn {
+    min-height: 20px;
+    image: url(://resource/image/title/remote.png);
+}
+
+QPushButton#remoteBtn:hover {
+    image: url(://resource/image/title/remote_hover.png);
+}
+
+QPushButton#remoteBtn:pressed {
+    image: url(://resource/image/title/remote.png);
+}
+
+QPushButton#hideMLBtn {
+    min-height: 20px;
+    image: url(://resource/image/title/hsl.png);
+}
+
+QPushButton#hideMLBtn:hover {
+    image: url(://resource/image/title/hsl_hover.png);
+}
+
+QPushButton#hideMLBtn:pressed {
+    image: url(://resource/image/title/hsl.png);
+}
+
+QPushButton#minimizeBtn {
+    min-height: 20px;
+    image: url(://resource/image/title/min.png);
+}
+
+QPushButton#minimizeBtn:hover {
+    image: url(://resource/image/title/min_hover.png);
+}
+
+QPushButton#minimizeBtn:pressed {
+    image: url(://resource/image/title/min.png);
+}
+
+QPushButton#closeBtn {
+    min-height: 20px;
+    image: url(://resource/image/title/close.png);
+}
+
+QPushButton#closeBtn:hover {
+    image: url(://resource/image/title/close_hover.png);
+}
+
+QPushButton#closeBtn:pressed {
+    image: url(://resource/image/title/close.png);
+}
+
+QMenu {
+    background:#FFFFFF;
+    padding: 8px 0px 8px 0px;
+    border: 1px solid #88BBBBBB;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #D5D5D5;
+    margin: 5px 0px 5px 0px;
+}
+
+QMenu::item {
+    color: #646464;
+    background: transparent;
+    height: 30px;
+    padding: 0px 40px 0px 30px;
+    margin: 0px 5px;
+/*    image: url(://resource/image/menu/menu_login.png);
+    subcontrol-position: left center;
+    subcontrol-origin: margin;*/
+}
+
+QMenu#menu_search::item, QMenu#menu_addMusic::item, QMenu#menu_remote::item {
+    padding: 0px 40px 0px 20px;
+}
+
+QMenu::item:selected {
+    color: #F0F0F0;
+    background: #169AF3;
+}
+
+QMenu::item:!enabled {
+    color: #B7B7B7;
+}
+
+QMenu::item:!enabled:selected {
+    background: #EFEFEF;
+}
+
+QMenu::icon {
+    padding: 0 5px 0 5px;
+}
+
+QMenu::indicator {
+    width: 16px;
+    height: 16px;
+    padding: 0 5px 0 5px;
+}
+
+QMenu::indicator:non-exclusive:checked {
+    image: url(://resource/image/menu/ckecked_dark.png);
+}
+
+QMenu::indicator:non-exclusive:checked:selected {
+    image: url(://resource/image/menu/ckecked_light.png);
+}
+
+QMenu::indicator:exclusive:checked {
+    image: url(://resource/image/menu/ckecked_dark.png);
+}
+
+QMenu::indicator:exclusive:checked:selected {
+    image: url(://resource/image/menu/ckecked_light.png);
+}
+
+QMenu::right-arrow {
+    image: url(://resource/image/menu/indicator_right.png);
+}
+
+QMenu::right-arrow:selected {
+    image: url(://resource/image/menu/indicator_right_hover.png);
+}
+
+QPushButton#searchBtn {
+    min-height: 16px;
+    min-width: 26px;
+    image: url(://resource/image/search/search_dark.png);
+}
+
+QLineEdit#searchLineEdit {
+    border: 0px;
+    border-radius: 13px;
+    min-height: 26px;
+    background: #B2FFFFFF;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+/*bottom widget*/
+QLabel#bottom_nameLabel {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+QSlider#bottom_slider::groove:horizontal {
+    border-radius: 2px;
+    height: 3px;
+}
+
+QSlider#bottom_slider::sub-page:horizontal {
+    background: #FFFFA0;
+}
+
+QSlider#bottom_slider::add-page:horizontal {
+    background: #C8C8C8;
+}
+
+QSlider#bottom_slider::handle:horizontal {
+    background: #FFFFA0;
+    width: 8px;
+    border-radius: 4px;
+    margin: -3px 0 -3px 0;
+}
+
+QPushButton#bottom_prevBtn {
+    min-height: 42px;
+    min-width: 42px;
+    max-height: 42px;
+    max-width: 42px;
+    image: url(://resource/image/bottom/prev.png);
+}
+
+QPushButton#bottom_prevBtn:hover {
+    image: url(://resource/image/bottom/prev_hover.png);
+}
+
+QPushButton#bottom_prevBtn:pressed {
+    image: url(://resource/image/bottom/prev.png);
+}
+
+QPushButton#bottom_playBtn {
+    min-height: 46px;
+    min-width: 46px;
+    image: url(://resource/image/bottom/play.png);
+}
+
+QPushButton#bottom_playBtn:hover {
+    image: url(://resource/image/bottom/play_hover.png);
+}
+
+QPushButton#bottom_playBtn:pressed {
+    image: url(://resource/image/bottom/play.png);
+}
+
+QPushButton#bottom_nextBtn {
+    min-height: 42px;
+    min-width: 42px;
+    max-height: 42px;
+    max-width: 42px;
+    image: url(://resource/image/bottom/next.png);
+}
+
+QPushButton#bottom_nextBtn:hover {
+    image: url(://resource/image/bottom/next_hover.png);
+}
+
+QPushButton#bottom_nextBtn:pressed {
+    image: url(://resource/image/bottom/next.png);
+}
+
+QPushButton#bottom_favoriteBtn {
+    height:22px;
+    width:22px;
+    image: url(://resource/image/bottom/unfavorite.png);
+}
+
+QPushButton#bottom_favoriteBtn:hover {
+    image: url(://resource/image/bottom/unfavorite_hover.png);
+}
+
+QPushButton#bottom_favoriteBtn:pressed {
+    image: url(://resource/image/bottom/unfavorite.png);
+}
+
+QPushButton#bottom_favoriteBtn:!enabled {
+    image: url(://resource/image/bottom/unfavorite_unabled.png);
+}
+
+QPushButton#bottom_loadBtn {
+    height:22px;
+    width:22px;
+    image: url(://resource/image/bottom/load.png);
+}
+
+QPushButton#bottom_loadBtn:hover {
+    image: url(://resource/image/bottom/load_hover.png);
+}
+
+QPushButton#bottom_loadBtn:pressed {
+    image: url(://resource/image/bottom/load.png);
+}
+
+QPushButton#bottom_loadBtn:!enabled {
+    image: url(://resource/image/bottom/load_unabled.png);
+}
+
+QPushButton#bottom_moreBtn {
+    height:22px;
+    width:22px;
+    image: url(://resource/image/bottom/more.png);
+}
+
+QPushButton#bottom_moreBtn:hover {
+    image: url(://resource/image/bottom/more_hover.png);
+}
+
+QPushButton#bottom_moreBtn:pressed {
+    image: url(://resource/image/bottom/more.png);
+}
+
+QPushButton#bottom_moreBtn:!enabled {
+    image: url(://resource/image/bottom/more_unabled.png);
+}
+
+QPushButton#bottom_modeBtn {
+    height:22px;
+    width:22px;
+    image: url(://resource/image/bottom/listcircle.png);
+}
+
+QPushButton#bottom_modeBtn:hover {
+    image: url(://resource/image/bottom/listcircle_hover.png);
+}
+
+QPushButton#bottom_modeBtn:pressed {
+    image: url(://resource/image/bottom/listcircle.png);
+}
+
+QPushButton#bottom_soundBtn {
+    height:22px;
+    width:22px;
+    image: url(://resource/image/bottom/vol.png);
+}
+
+QPushButton#bottom_soundBtn:hover {
+    image: url(://resource/image/bottom/vol_hover.png);
+}
+
+QPushButton#bottom_soundBtn:pressed {
+    image: url(://resource/image/bottom/vol.png);
+}
+
+QPushButton#bottom_equalizerBtn {
+    height: 22px;
+    width: 48px;
+    image: url(://resource/image/bottom/equalizer.png);
+}
+
+QPushButton#bottom_equalizerBtn:hover {
+    image: url(://resource/image/bottom/equalizer_hover.png);
+}
+
+QPushButton#bottom_equalizerBtn:pressed {
+    image: url(://resource/image/bottom/equalizer.png);
+}
+
+QPushButton#bottom_lyricBtn {
+    height:22px;
+    width:22px;
+    image: url(://resource/image/bottom/lrc.png);
+}
+
+QPushButton#bottom_lyricBtn:hover {
+    image: url(://resource/image/bottom/lrc_hover.png);
+}
+
+QPushButton#bottom_lyricBtn:pressed {
+    image: url(://resource/image/bottom/lrc.png);
+}
+
+QPushButton#bottom_commentBtn {
+    height:22px;
+    width:22px;
+    image: url(://resource/image/bottom/comment.png);
+}
+
+QPushButton#bottom_commentBtn:hover {
+    image: url(://resource/image/bottom/comment_hover.png);
+}
+
+QPushButton#bottom_commentBtn:pressed {
+    image: url(://resource/image/bottom/comment.png);
+}
+
+QPushButton#bottom_commentBtn:!enabled {
+    image: url(://resource/image/bottom/comment_unabled.png);
+}
+
+QPushButton#bottom_listBtn {
+    height:22px;
+    width:62px;
+    font-size: 14px;
+    color: #FFFFFF;
+    image: url(://resource/image/bottom/list.png);
+}
+
+QPushButton#bottom_listBtn:hover {
+    image: url(://resource/image/bottom/list_hover.png);
+}
+
+QPushButton#bottom_listBtn:pressed {
+    image: url(://resource/image/bottom/list.png);
+}
+/* main widget*/
+QPushButton#mid_main_listBtn {
+    image: url(://resource/image/widget/playlist_pressed.png);
+}
+
+QPushButton#mid_main_cloudBtn {
+    image: url(://resource/image/widget/cloud.png);
+}
+
+QPushButton#mid_main_cloudBtn:hover {
+    image: url(://resource/image/widget/cloud_hover.png);
+}
+
+QPushButton#mid_main_cloudBtn:pressed {
+    image: url(://resource/image/widget/cloud_pressed.png);
+}
+
+QPushButton#mid_main_radioBtn {
+    image: url(://resource/image/widget/radio.png);
+}
+
+QPushButton#mid_main_radioBtn:hover {
+    image: url(://resource/image/widget/radio_hover.png);
+}
+
+QPushButton#mid_main_radioBtn:pressed {
+    image: url(://resource/image/widget/radio_pressed.png);
+}
+
+QPushButton#mid_main_phoneBtn {
+    image: url(://resource/image/widget/phone.png);
+}
+
+QPushButton#mid_main_phoneBtn:hover {
+    image: url(://resource/image/widget/phone_hover.png);
+}
+
+QPushButton#mid_main_phoneBtn:pressed {
+    image: url(://resource/image/widget/phone_pressed.png);
+}
+
+QPushButton#mid_main_loadBtn {
+    image: url(://resource/image/widget/load.png);
+}
+
+QPushButton#mid_main_loadBtn:hover {
+    image: url(://resource/image/widget/load_hover.png);
+}
+
+QPushButton#mid_main_loadBtn:pressed {
+    image: url(://resource/image/widget/load_pressed.png);
+}
+
+QWidget#midListWidget {
+    background: transparent;
+}
+
+QWidget#midPlayListWidget {
+    border-bottom: 1px solid #3CFFFFFF;
+}
+/* playListButton */
+QLabel#playList_icon {
+    image: url(://resource/image/widget/arrow_right.png);
+}
+
+QLabel#playList_name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+QPushButton#playList_upLoading {
+    height:17px;
+    width:17px;
+    image: url(://resource/image/widget/uploading.png);
+}
+
+QPushButton#playList_share {
+    height:20px;
+    width:20px;
+    image: url(://resource/image/widget/share.png);
+}
+
+QPushButton#playList_list {
+    height:20px;
+    width:20px;
+    image: url(://resource/image/widget/playList2.png);
+}
+
+QLineEdit#playList_edit {
+    border: 3px solid rgba(171,171,254,240);
+    background: #FFFFFF;
+    border-radius: 0px;
+}
+
+QMenu#listmenu_add::item, QMenu#listmenu_edit::item {
+    padding: 0 40px 0 20px;
+}
+
+QPushButton#listitem_delayBtn {
+
+}
+
+QPushButton#listitem_mvBtn {
+
+}
+
+QPushButton#listitem_favrBtn {
+
+}
+
+QPushButton#listitem_delBtn {
+
+}
+
+QPushButton#listitem_moreBtn {
+
+}
+/*QWidget#mid_play_listWidget_empty {
+    background: transparent;
+}*/
+QPushButton#mid_play_listWidget_fileIcon {
+    height: 20px;
+    width: 20px;
+    image: url(://resource/image/widget/addFile.png);
+}
+QPushButton#mid_play_listWidget_dirIcon {
+    height: 20px;
+    width: 20px;
+    image: url(://resource/image/widget/addDir.png);
+}
+QPushButton#mid_play_listWidget_fileBtn {
+
+}
+QPushButton#mid_play_listWidget_dirBtn {
+
+}
