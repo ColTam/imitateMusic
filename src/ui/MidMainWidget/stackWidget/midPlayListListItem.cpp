@@ -16,12 +16,35 @@ midPlayListListItem::midPlayListListItem(QWidget *parent)
     , m_moreButton(new basePushButton(m_rightWidget))
     , m_timeLabel(new QLabel(m_rightWidget))
 {
-
+    initForm();
+    initWidget();
+    initConnect();
 }
 
 midPlayListListItem::~midPlayListListItem()
 {
 
+}
+
+void midPlayListListItem::setItemName(const QString &name)
+{
+    m_nameLabel->setText(name);
+}
+
+void midPlayListListItem::enterEvent(QEvent *)
+{
+    m_favoriteButton->show();
+    m_deleteButton->show();
+    m_moreButton->show();
+    m_timeLabel->hide();
+}
+
+void midPlayListListItem::leaveEvent(QEvent *)
+{
+    m_favoriteButton->hide();
+    m_deleteButton->hide();
+    m_moreButton->hide();
+    m_timeLabel->show();
 }
 
 void midPlayListListItem::initForm()
@@ -32,14 +55,14 @@ void midPlayListListItem::initForm()
     m_deleteButton->setObjectName("listitem_delBtn");
     m_moreButton->setObjectName("listitem_moreBtn");
 
-    m_rightWidget->setFixedSize(135, 32);
+    m_rightWidget->setFixedSize(101, 32);
 
-    m_MVButton->setGeometry(5,6,20,20);
-    m_favoriteButton->setGeometry(40,6,20,20);
-    m_deleteButton->setGeometry(75,6,20,20);
-    m_moreButton->setGeometry(110,6,20,20);
+    m_MVButton->setGeometry(1,6,20,20);
+    m_favoriteButton->setGeometry(28,6,20,20);
+    m_deleteButton->setGeometry(55,6,20,20);
+    m_moreButton->setGeometry(82,6,20,20);
 
-    m_timeLabel->setGeometry(90,6,45,20);
+    m_timeLabel->setGeometry(64,6,35,20);
     m_timeLabel->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
 
     m_timeLabel->setText("00:00");
@@ -53,10 +76,14 @@ void midPlayListListItem::initWidget()
     mainLayout->addStretch();
     mainLayout->addWidget(m_rightWidget);
 
-    mainLayout->setSpacing(5);
-    mainLayout->setContentsMargins(14,0,14,0);
+    mainLayout->setSpacing(4);
+    mainLayout->setContentsMargins(0,0,14,0);
 
     setLayout(mainLayout);
+
+    m_favoriteButton->hide();
+    m_deleteButton->hide();
+    m_moreButton->hide();
 }
 
 void midPlayListListItem::initConnect()

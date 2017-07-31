@@ -16,7 +16,7 @@ midPlayListListWidget::midPlayListListWidget(QWidget *parent)
     , m_addDirIcon(new basePushButton(this))
     , m_addDirButton(new basePushButton(this))
     , m_item(new midPlayListListItem(this))
-    , m_mainLayout(new QFormLayout())
+    , m_listLayout(new QFormLayout())
 {
     initForm();
     initWidget();
@@ -24,6 +24,11 @@ midPlayListListWidget::midPlayListListWidget(QWidget *parent)
 }
 
 midPlayListListWidget::~midPlayListListWidget()
+{
+
+}
+
+void midPlayListListWidget::addItem2List()
 {
 
 }
@@ -41,7 +46,7 @@ void midPlayListListWidget::wheelEvent(QWheelEvent *event)
 void midPlayListListWidget::initForm()
 {
     setFrameShape(QFrame::NoFrame);
-    setFixedSize(310,69);
+//    setMinimumHeight(69);
     setMinimumWidth(310);
     setMaximumWidth(380);
 
@@ -58,7 +63,7 @@ void midPlayListListWidget::initForm()
     m_addDirButton->setText("添加本地歌曲文件夹");
     m_addDirButton->setFont(f);
 
-    m_emptyWidget->setFixedSize(310,69);
+    m_item->setItemName("一闪一闪亮晶晶");
 }
 
 void midPlayListListWidget::initWidget()
@@ -84,11 +89,23 @@ void midPlayListListWidget::initWidget()
 
     m_emptyWidget->setLayout(emptyLayout);
 
-    m_mainLayout->addWidget(m_emptyWidget);
-    m_mainLayout->setSpacing(0);
-    m_mainLayout->setContentsMargins(0,0,0,0);
+    m_listLayout->addWidget(m_item);
+    m_listLayout->setSpacing(0);
+    m_listLayout->setContentsMargins(0,0,0,0);
 
-    setLayout(m_mainLayout);
+    QVBoxLayout *mainLayout = new QVBoxLayout();
+    mainLayout->addWidget(m_emptyWidget);
+    mainLayout->addLayout(m_listLayout);
+    mainLayout->setSpacing(0);
+    mainLayout->setContentsMargins(0,0,0,0);
+
+    setLayout(mainLayout);
+
+//    m_item->hide();
+//    setMaximumHeight(69);
+
+    m_emptyWidget->hide();
+    setMaximumHeight(32 * m_listLayout->count());
 }
 
 void midPlayListListWidget::initConnect()

@@ -554,7 +554,10 @@ QWidget#midListWidget {
 }
 
 QWidget#midPlayListWidget {
-    border-bottom: 1px solid #3CFFFFFF;
+    border-bottom: 1px solid #11FFFFFF;
+}
+QWidget#midPlayList_listWidget {
+    background:transparent;border:none;
 }
 /* playListButton */
 QLabel#playList_icon {
@@ -595,23 +598,45 @@ QMenu#listmenu_add::item, QMenu#listmenu_edit::item {
 }
 
 QPushButton#listitem_delayBtn {
+height: 22px;
+width: 22px;
+    image: url(:/resource/image/widget/delay.png);
+}
 
+QPushButton#listitem_delayBtn:hover {
+    image: url(:/resource/image/widget/delay_hover.png);
 }
 
 QPushButton#listitem_mvBtn {
+    image: url(:/resource/image/widget/mv.png);
+}
 
+QPushButton#listitem_mvBtn:hover {
+    image: url(:/resource/image/widget/mv_hover.png);
 }
 
 QPushButton#listitem_favrBtn {
+    image: url(:/resource/image/widget/unfavorite_dark.png);
+}
 
+QPushButton#listitem_favrBtn:hover {
+    image: url(:/resource/image/widget/unfavorite_dark_hover.png);
 }
 
 QPushButton#listitem_delBtn {
+    image: url(:/resource/image/widget/del_dark.png);
+}
 
+QPushButton#listitem_delBtn:hover {
+    image: url(:/resource/image/widget/del_dark_hover.png);
 }
 
 QPushButton#listitem_moreBtn {
+    image: url(:/resource/image/widget/more.png);
+}
 
+QPushButton#listitem_moreBtn:hover {
+    image: url(:/resource/image/widget/more_hover.png);
 }
 /*QWidget#mid_play_listWidget_empty {
     background: transparent;

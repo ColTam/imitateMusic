@@ -13,9 +13,14 @@ public:
     explicit midPlayListListItem(QWidget *parent = 0);
     ~midPlayListListItem();
 
+    void setItemName(const QString &name);
 signals:
 
 public slots:
+
+protected:
+    void enterEvent(QEvent *) override;
+    void leaveEvent(QEvent *) override;
 
 private:
     void initForm();

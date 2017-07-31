@@ -132,5 +132,7 @@
         <file>resource/image/widget/prev.png</file>
         <file>resource/image/widget/addDir.png</file>
         <file>resource/image/widget/addFile.png</file>
+        <file>resource/image/widget/delay_hover.png</file>
+        <file>resource/image/widget/del_dark_hover.png</file>
     </qresource>
 </RCC>

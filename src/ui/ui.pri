@@ -29,8 +29,7 @@ HEADERS +=\
     $$PWD/MidMainWidget/stackWidget/midPlayListButtonMenu.h \
     $$PWD/MidMainWidget/stackWidget/midPlayListLineEditMenu.h \
     $$PWD/MidMainWidget/stackWidget/midPlayListListWidget.h \
-    $$PWD/MidMainWidget/stackWidget/midPlayListListItem.h \
-    $$PWD/MidMainWidget/stackWidget/midPlayListListEmptyItem.h
+    $$PWD/MidMainWidget/stackWidget/midPlayListListItem.h
 
 SOURCES +=\
     $$PWD/TitleBar/mtitlewidget.cpp \
@@ -63,5 +62,4 @@ SOURCES +=\
     $$PWD/MidMainWidget/stackWidget/midPlayListButtonMenu.cpp \
     $$PWD/MidMainWidget/stackWidget/midPlayListLineEditMenu.cpp \
     $$PWD/MidMainWidget/stackWidget/midPlayListListWidget.cpp \
-    $$PWD/MidMainWidget/stackWidget/midPlayListListItem.cpp \
-    $$PWD/MidMainWidget/stackWidget/midPlayListListEmptyItem.cpp
+    $$PWD/MidMainWidget/stackWidget/midPlayListListItem.cpp

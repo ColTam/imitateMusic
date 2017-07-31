@@ -38,7 +38,8 @@ void midPlayListWidget::initForm()
     setMouseTracking(true);
     setObjectName("midPlayListWidget");
 
-    m_playListWidget->setStyleSheet( " QWidget {background:transparent;border:none;} " );
+    m_playListWidget->setObjectName("midPlayList_listWidget");
+//    m_playListWidget->setStyleSheet( " QWidget {background:transparent;border:none;} " );
 
     m_playListWidget->hide();
 }

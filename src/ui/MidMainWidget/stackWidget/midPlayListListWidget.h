@@ -25,9 +25,8 @@ public:
     explicit midPlayListListWidget(QWidget *parent = 0);
     ~midPlayListListWidget();
 
-signals:
-
-public slots:
+public Q_SLOTS:
+    void addItem2List();
 
 protected:
     void contextMenuEvent(QContextMenuEvent *event) override;
@@ -48,7 +47,7 @@ private:
 
     midPlayListListItem *m_item;
 
-    QFormLayout *m_mainLayout;
+    QFormLayout *m_listLayout;
 };
 
 #endif // MIDPLAYLISTLISTWIDGET_H
