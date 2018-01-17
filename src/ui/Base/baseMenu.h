@@ -20,6 +20,7 @@ public:
 protected:
     void keyPressEvent(QKeyEvent *event) override;
     void showEvent(QShowEvent *event) override;
+    void leaveEvent(QEvent *event) override;
 };
 
 #endif // BASEMENU_H

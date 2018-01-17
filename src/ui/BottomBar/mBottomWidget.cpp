@@ -56,7 +56,7 @@ void mBottomWidget::contextMenuEvent(QContextMenuEvent *event)
             !inFavoriteButton && !inLoadButton && !inMoreButton && !inModeButton &&
             !inSoundButton && !inEquakizerButton && !inLyricButton && !inCommentButton &&
             !inListButton)
-        m_titleMenu->exec(QCursor::pos()+QPoint(5, -515));
+        m_titleMenu->exec(QCursor::pos()+QPoint(5, -505));
 
     event->accept();
 }

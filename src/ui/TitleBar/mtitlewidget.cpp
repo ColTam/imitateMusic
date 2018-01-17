@@ -62,7 +62,7 @@ void mTitleWidget::contextMenuEvent(QContextMenuEvent *event)
             !inRefreshButton && !inToolButton && !inGameButton && !inNewsButton &&
             !inSkinButton && !inMenuButton && !inRemoteButton && !inHideButton &&
             !inMinimizeButton && !inCloseButton)
-        m_titleMenu->exec(QCursor::pos()+QPoint(5,5));
+        m_titleMenu->exec(QCursor::pos()+QPoint(5,15));
 
     event->accept();
 }

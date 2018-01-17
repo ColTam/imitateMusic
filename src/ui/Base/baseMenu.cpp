@@ -1,6 +1,7 @@
 #include "baseMenu.h"
 
 #include <qevent.h>
+#include <QDebug>
 
 baseMenu::baseMenu(QWidget *parent) : QMenu(parent)
 {
@@ -14,5 +15,10 @@ void baseMenu::keyPressEvent(QKeyEvent *event)
 
 void baseMenu::showEvent(QShowEvent *event)
 {
-//    this->move(this->mapFromGlobal(QCursor::pos())+QPoint(5,5));
+    this->move(QPoint(this->x()+7, this->y()-9));
+}
+
+void baseMenu::leaveEvent(QEvent *event)
+{
+    event->ignore();
 }
